@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amina-rahal/Natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amina-rahal/Natours/issues"
+  },
+  "homepage": "https://github.com/amina-rahal/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
