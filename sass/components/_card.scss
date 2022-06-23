@@ -2,13 +2,13 @@
   // functionality
   perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
     transition: all .8s ease;
     font-size: 2rem;
 
-    height: 50rem;
+    height: 52rem;
     color: #FFF;
     position: absolute;
     top: 0;
@@ -17,6 +17,7 @@
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    overflow: hidden;
 
     &--front {
       background-color: $color-white;
@@ -44,6 +45,8 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
       background-image:
@@ -57,6 +60,50 @@
 
     &--3 {
       background-image: url(../img/nat-5.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 65%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom,
+                        rgba($color-secondary-light, .85),
+                        rgba($color-secondary-dark, .85));
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
     }
   }
 }
