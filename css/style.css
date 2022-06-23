@@ -139,6 +139,12 @@ body {
   transform: translateY(-0.1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.btn--green {
+  background-color: #7ed56f;
+  color: #777; }
+  .btn--green::after {
+    background-color: #fff; }
+
 .btn--white {
   background-color: #fff;
   color: #777; }
@@ -204,6 +210,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
