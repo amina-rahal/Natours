@@ -356,7 +356,9 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     psoition: relative; }
   .story__img {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -369,10 +371,13 @@ body {
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
-    transition: all .5s; }
+    transition: all .5s;
+    backface-visibility: hidden; }
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(-4rem) scale(1); }
 
 .row {
   max-width: 114rem;
