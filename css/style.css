@@ -318,6 +318,30 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(-12deg); }
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -334,25 +358,6 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
-
-.story {
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  border-radius: 3px;
-  padding: 6rem;
-  font-size: 1.6rem; }
-  .story__shape {
-    width: 15rem;
-    height: 15rem;
-    background-color: orangered;
-    float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem); }
 
 .row {
   max-width: 114rem;
